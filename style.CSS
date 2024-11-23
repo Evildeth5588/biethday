@@ -1,0 +1,339 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .hidden {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  h1, h2 {
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ff4b47;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Use 'row' for horizontal alignment */
+    gap: 15px; /* Adds space between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Animations */
+  .animation {
+    animation: pop-in 1s ease-in-out;
+  }
+  
+  @keyframes pop-in {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+  
+  .gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom right, #ffafbd, #ffc3a0);
+    color: #fff;
+    text-align: center;
+  }
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #ff4b47;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Use 'row' for horizontal alignment */
+    gap: 15px; /* Adds space between buttons */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .trivia {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .countdown {
+    margin: 20px 0;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+/* Continue Page */
+#continue-page {
+  position: relative;
+}
+
+#confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.thank-you {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  animation: fade-in 2s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+/* Scrollable Page */
+#continue-page {
+  background: url('celebration_background.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 20px;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+/* Styling the scrollbar */
+#continue-page::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+#continue-page::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2); /* Track color */
+  border-radius: 5px;
+}
+
+#continue-page::-webkit-scrollbar-thumb {
+  background: #ff6f61; /* Thumb color */
+  border-radius: 5px;
+}
+
+#continue-page::-webkit-scrollbar-thumb:hover {
+  background: #ff4b47; /* Thumb hover color */
+}
+/* Background and Images */
+#continue-page {
+  background: url('celebration_background.jpg') no-repeat center center/cover;
+  position: relative;
+  padding: 20px;
+}
+
+.display-image {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Adjust audio button styling (optional) */
+audio {
+  display: none; /* Hide audio controls for autoplay background music */
+}
+/* Body Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents extra scrollbars */
+}
+
+/* Continue Page Styling */
+#continue-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Background Slideshow */
+/* Body Styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevents extra scrollbars */
+}
+
+/* Continue Page Styling */
+#continue-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Background Slideshow */
+#continue-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  animation: slideshow 15s infinite;
+}
+
+/* Slideshow Animation */
+@keyframes slideshow {
+  0% { background-image: url('image1.jpg'); }
+  25% { background-image: url('image2.jpg'); }
+  50% { background-image: url('image3.jpg'); }
+  75% { background-image: url('image4.jpg'); }
+  100% { background-image: url('image1.jpg'); }
+}
+
+/* Foreground Content */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin: 10px;
+}
+
+.btn:hover {
+  background: #ff4b47;
+}
+
+/* Thank You Message */
+.thank-you {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  animation: fade-in 2s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Confetti Canvas */
+#confetti-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+

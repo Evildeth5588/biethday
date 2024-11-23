@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continue - Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="continue.js" defer></script>
+</head>
+<body>
+  <div class="page" id="continue-page">
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+        <source src="C:\Users\Admin\OneDrive\Pictures\happyb.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Foreground Content -->
+    <div class="content">
+      <h2>🎉 Let’s Continue the Celebration! 🎉</h2>
+      <p>Thank you for being such a wonderful person. Let’s make this day even more special!</p>
+
+      <!-- Button to Start Confetti and Play Music -->
+      <button class="btn" id="start-button" onclick="startCelebration()">Start Celebration 🎊</button>
+
+      <!-- Thank You Message -->
+      <p class="thank-you hidden" id="thank-you">
+        💌 You’re truly amazing! Thank you for being you. Happy Birthday! 💌
+      </p>
+
+      <!-- Back to Home Button -->
+      <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+    </div>
+
+    <!-- Canvas for Confetti Animation -->
+    <canvas id="confetti-canvas"></canvas>
+  </div>
+</body>
+</html>
